@@ -1,0 +1,28 @@
+{
+  "name": "be-there-today",
+  "version": "0.1.0",
+  "description": "Protest aggregator and notifier",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.14.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxrpeterson/be-there-today.git"
+  },
+  "keywords": [
+    "protest"
+  ],
+  "author": "Max Peterson",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/maxrpeterson/be-there-today/issues"
+  },
+  "homepage": "https://github.com/maxrpeterson/be-there-today#readme"
+}

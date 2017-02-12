@@ -6,7 +6,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'client', 'dist'),
     filename: 'bundle.js',
-    publicPath: '/app/'
+    publicPath: '/client/dist'
   },
   module: {
     loaders: [
@@ -21,8 +21,10 @@ module.exports = {
       }
     ]
   },
+  devtool: 'cheap-eval-source-map',
   devServer: {
-    contentBase: path.join(__dirname, 'client', 'dist'),
+    filename: 'bundle.js',
+    contentBase: [path.join(__dirname, 'public')],
     port: 3000
   }
 };

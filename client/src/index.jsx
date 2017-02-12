@@ -1,18 +1,19 @@
-import * as React from 'react';
-import * as ReactDom from 'react-dom';
-import * as Firebase from 'firebase';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Firebase from 'firebase';
+import config from './firebase-config.jsx';
 
-const db = Firebase.initialize;
+console.log(config);
+
+const db = Firebase.initializeApp(config);
 
 let stuff = () => {
   console.log('what?');
-  console.log(React);
-  console.log(ReactDom);
 }
 
-ReactDom.render(
+window.addEventListener('DOMContentLoaded', stuff);
+
+ReactDOM.render(
   <h1>lolwut?</h1>,
   document.querySelector('#app-root')
 );
-
-window.addEventListener('DOMContentLoaded', stuff);

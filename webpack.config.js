@@ -21,7 +21,7 @@ module.exports = {
       }
     ]
   },
-  devtool: 'cheap-eval-source-map',
+  devtool: 'cheap-module-eval-source-map',
   devServer: {
     filename: 'bundle.js',
     contentBase: [path.join(__dirname, 'public')],

@@ -7,7 +7,12 @@ class Protest extends React.Component {
   }
 
   render() {
-    return <div className="protest">{this.props.name}</div>;
+    return (
+      <div className="protest">
+        <h3>{this.props.protest.title}</h3>
+        <p>{this.props.protest.description}</p>
+      </div>
+    );
   }
 }
 

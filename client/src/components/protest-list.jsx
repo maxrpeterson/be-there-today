@@ -1,6 +1,6 @@
 import React from 'react';
 import Protest from './protest.jsx';
-import db from '../firebase-config.jsx';
+import db from '../firebase-connection.jsx';
 
 class ProtestList extends React.Component {
   constructor(props) {
